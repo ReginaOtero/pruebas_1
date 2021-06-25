@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<odoo>
+    <record model="ir.ui.view" id="res_partner_form_inherit">
+        <field name="name">res.partner.form.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page string="Datos para punto de entrega">
+                    <group>
+                        <field name="id_cliente" string="No Cliente"/>
+                        <field name="cuenta_analitica" string="Ruta Asignada"/>
+                        <field name="visita_lunes" string="Lunes"/>
+                        <field name="visita_martes" string="Martes"/>
+                        <field name="visita_miercoles" string="Miercoles"/>
+                        <field name="visita_jueves" string="Jueves"/>
+                        <field name="visita_viernes" string="Viernes"/>
+                        <field name="visita_sabado" string="Sabado"/>
+                        <field name="visita_domingo" string="Domingo"/>
+                    </group>
+                </page>
+            </notebook>
+             <xpath expr="//field[@name='type']" position="before">
+                <field name="tipo_cliente" string="Alta como Cliente"/>
+            </xpath>            
+        </field>
+    </record>
+</odoo>
