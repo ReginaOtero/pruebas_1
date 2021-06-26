@@ -22,7 +22,7 @@
             </notebook>
              <xpath expr="//field[@name='type']" position="before">
                 <field name="tipo_cliente" string="Alta como Cliente"/>
-            </xpath>            
+            </xpath>
         </field>
     </record>
 </odoo>
